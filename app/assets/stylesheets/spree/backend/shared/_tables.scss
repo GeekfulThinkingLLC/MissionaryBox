@@ -1,0 +1,203 @@
+table {
+  // Extend all tables with Bootstrap's default table style
+  @extend .table;
+  border-spacing: 0;
+
+  th, td {
+    border-right: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+
+    img {
+      border: 1px solid transparent;
+    }
+
+    &:first-child {
+      border-left: 1px solid $color-border;
+    }
+
+    a {
+      border-bottom: 1px dotted lighten($link-color, 10);
+
+      &:hover {
+        border-color: lighten($link-hover-color, 10);
+      }
+    }
+
+    .handle {
+      display: block !important;
+      text-align: center;
+      padding-right: 0;
+    }
+
+    &.actions {
+      background-color: transparent;
+      border: none !important;
+      text-align: center;
+
+      span.text {
+        font-size: $font-size-base;
+      }
+
+      [class*='fa-'].no-text {
+        font-size: 120%;
+        background-color: very-light($color-3);
+        border: 1px solid $color-border;
+        border-radius: 15px;
+        width: 29px;
+        height: 29px;
+        display: inline-block;
+        padding-top: 6px;
+
+        &:before {
+          text-align: center !important;
+          padding: 0;
+          width: 27px;
+          display: inline-block;
+        }
+
+        &:hover {
+          border-color: transparent;
+        }
+      }
+
+      button[class*='fa-'] {
+        color: $link-color;
+        padding: 0 !important;
+      }
+
+      .fa-envelope-alt, .fa-eye-open {
+        color: $link-color;
+        padding-left: 0px;
+
+        &:hover {
+          background-color: $color-3;
+          color: $color-1;
+        }
+      }
+      .fa-trash:hover, .fa-void:hover, .fa-failure:hover {
+        background-color: $brand-danger;
+        color: $color-1;
+      }
+      .fa-cancel:hover {
+        background-color: $brand-warning;
+        color: $color-1;
+      }
+      .fa-edit:hover, .fa-capture:hover, .fa-ok:hover, .fa-plus:hover, .fa-save:hover {
+        background-color: $brand-success;
+        color: $color-1;
+      }
+      .fa-copy:hover {
+        background-color: $brand-warning;
+        color: $color-1;
+      }
+      .fa-thumbs-up:hover {
+        background-color: $brand-success;
+        color: $color-1;
+      }
+      .fa-thumbs-down:hover {
+        background-color: $brand-danger;
+        color: $color-1;
+      }
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+    }
+
+    &.no-border {
+      border-right: none;
+    }
+
+    .handle {
+      @extend [class^="icon-"]:before;
+      @extend .fa;
+      @extend .fa-bars;
+      cursor: move;
+    }
+
+  }
+
+  &.no-borders {
+    td, th {
+      border: none !important;
+    }
+
+  }
+
+  th:not(.wrap-text), td.actions, td.no-wrap, .state {
+    white-space: nowrap;
+  }
+
+  thead {
+    th {
+      border-top: 1px solid $color-border;
+      border-bottom: none;
+      background-color: $color-tbl-thead;
+      text-align: center;
+      font-weight: $font-weight-bold;
+      vertical-align: top;
+    }
+  }
+
+  tbody {
+    tr {
+      &:first-child th,
+      &:first-child td {
+        border-top: 1px solid $color-border;
+      }
+      &.even td {
+        background-color: $color-tbl-even;
+
+        img {
+          border: 1px solid very-light($color-3, 6);
+        }
+      }
+
+      &:hover td {
+        background-color: very-light($color-3, 5);
+
+        img {
+          border: 1px solid $color-border;
+        }
+      }
+
+      &.deleted td {
+        background-color: very-light($brand-danger, 6);
+        border-color: very-light($brand-danger, 15);
+      }
+
+      &.ui-sortable-placeholder td {
+        border: 1px solid $color-2 !important;
+        visibility: visible !important;
+
+        &.actions {
+          background-color: transparent;
+          border-right: none !important;
+          border-top: none !important;
+          border-bottom: none !important;
+          border-left: 1px solid $color-2 !important;
+        }
+      }
+
+      &.ui-sortable-helper {
+        width: 100%;
+
+        td {
+          background-color: lighten($color-3, 33);
+          border-bottom: 1px solid $color-border;
+
+          &.actions {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.no-border-top tr:first-child td {
+      border-top: none;
+    }
+  }
+}

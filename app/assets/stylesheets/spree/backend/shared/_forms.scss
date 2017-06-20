@@ -1,0 +1,216 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="datetime"],
+input[type="time"],
+input[type="url"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  padding: $input-padding-y $input-padding-x;
+  color: $input-color;
+  border: $input-btn-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  background: $input-bg;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: 0;
+  }
+
+  &:disabled {
+    background: $input-bg-disabled;
+  }
+
+  &::placeholder {
+    color: $input-color-placeholder;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+}
+
+textarea {
+  line-height: 19px;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+label {
+  font-weight: $font-weight-bold;
+  font-size: 90%;
+  display: inline;
+  margin-bottom: 5px;
+  color: $color-4;
+
+  &.inline {
+    display: inline-block !important;
+  }
+
+  &.block {
+    display: block !important;
+  }
+
+  &.required:after {
+    content: " *";
+  }
+}
+
+.label-block label { display: block }
+
+input[type="submit"],
+input[type="button"],
+button, .button {
+  @extend .btn;
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+
+  &:before {
+    font-weight: normal !important;
+  }
+
+  &.fullwidth {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+span.info {
+  font-size: 85%;
+  color: lighten($body-color, 15);
+  display: block;
+  line-height: 20px;
+  margin: 5px 0;
+  .field & {
+    font-style: italic;
+  }
+}
+
+.field {
+  padding: 10px 0;
+
+  &.checkbox {
+    min-height: 73px;
+    display: flex;
+    align-items: center;
+
+    input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+
+    label {
+      cursor: pointer;
+      display: block;
+    }
+  }
+
+  ul {
+    border-top: 1px solid $color-border;
+    list-style: none;
+    padding-top: 5px;
+
+    li {
+      display: inline-block;
+      padding-right: 10px;
+
+
+      label {
+        font-weight: normal;
+        text-transform: none;
+      }
+      &.white-space-nowrap {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &.withError {
+    .field_with_errors {
+      label {
+        color: very-light($brand-danger, 30);
+      }
+
+      input {
+        border-color: very-light($brand-danger, 15);
+      }
+    }
+    .formError {
+      color: very-light($brand-danger, 30);
+      font-style: italic;
+      font-size: 85%;
+    }
+    .select2-container {
+      border-radius: 4px;
+      border: 1px solid very-light($brand-danger, 15);
+    }
+  }
+}
+
+fieldset {
+  border: 1px solid $color-border;
+  position: relative;
+  margin-bottom: 35px;
+  padding: 10px 0 15px 0;
+  border-left: none;
+  border-right: none;
+
+  &.no-border-bottom {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  &.no-border-top {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  legend {
+    color: $color-2;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    padding: 8px 15px;
+    width: auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    i {
+      color: $link-color;
+    }
+  }
+
+  label {
+    color: lighten($body-color, 8);
+  }
+
+  .filter-actions {
+    margin-bottom: -32px;
+    margin-top: 15px;
+    text-align: center;
+
+    form {
+      display: inline-block;
+    }
+
+    button, .button, input[type="submit"], input[type="button"] {
+      box-shadow: 0 0 0 15px $body-bg;
+    }
+
+    // Always make sure the choices at the bottom of a fieldset are spaced out
+    > * + * {
+      margin-left: 2em;
+    }
+  }
+}
+
+.form-actions {
+  margin-top: 18px;
+}
+.form-buttons {
+  text-align: center;
+}
