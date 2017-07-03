@@ -1,7 +1,6 @@
 <nav id="top-nav-bar" class="columns ten">
-  <ul id="nav-bar" class="inline" data-hook>
-    <li id="search-bar" data-hook>
-      <%= render partial: 'spree/shared/search' %>
-    </li>
+  <ul id="nav-bar" class="inline">
+    <li><%= link_to "Login", create_new_session_path %></li>
+    <li><%= link_to "Sign Up", signup_path %></li>
   </ul>
 </nav>
