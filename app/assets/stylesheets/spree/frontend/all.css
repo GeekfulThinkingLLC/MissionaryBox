@@ -7,3 +7,18 @@
 #footer {
 	height: 200px;
 }
+
+#footer-left {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+#footer-right {
+	float: right;
+	letter-spacing: 10px;
+}
+
+.footer-margin {
+	margin-top: 50px;
+}

@@ -1,5 +1,14 @@
 <footer id="footer" class="sixteen columns fixed-bottom footer-css">
-  <div id="footer-left" class="columns alpha eight">
-    <p>Powered by <%= link_to 'GeekfulThinking', 'http://www.geekfulthinking.com' %></p>
+  <div class="container">
+    <div class="footer-margin">
+      <div id="footer-left" class="columns alpha eight">
+        <p>Powered by <%= link_to 'GeekfulThinking', 'http://www.geekfulthinking.com' %></p>
+      </div>
+
+      <div id="footer-right">
+        <%= link_fa_to 'facebook-official fa-3x', '', 'https://www.facebook.com' %>
+        <%= link_fa_to 'linkedin-square fa-3x', '', 'https://www.linkedin.com' %>
+      </div>
+    </div>
   </div>
 </footer>
