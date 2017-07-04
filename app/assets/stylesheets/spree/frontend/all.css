@@ -4,7 +4,11 @@
  *= require spree/frontend/screen
 */
 
-#footer {
+* {
+	margin: 0;
+}
+
+footer, .push {
 	height: 200px;
 }
 
@@ -19,6 +23,23 @@
 	letter-spacing: 10px;
 }
 
-.footer-margin {
-	margin-top: 50px;
+.fa {
+	color: black;
+}
+
+.wrapperxx {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;
+}
+
+html, body {
+	height: 100%;
+}
+
+.footer-css {
+	border-top: 1px solid #d9d9db;
+	width: 100%;
+	padding-top: 50px;
 }
