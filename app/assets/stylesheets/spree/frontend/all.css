@@ -38,27 +38,12 @@ html, body {
 	line-height: 2rem;
 }
 
-.powered-by a {
+.powered-by {
 	text-decoration: none;
 	color: red;
 }
 
-
-@keyframes flippity {
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-
-.flippity {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-name: flippity;
-  animation-name: flippity;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  opacity: 1;
+.powered-by:hover {
+	text-decoration: none;
+	color: red;
 }
