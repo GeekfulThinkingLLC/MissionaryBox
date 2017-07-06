@@ -8,19 +8,12 @@ footer, .push {
 	height: 200px;
 }
 
-#footer-left {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-}
-
-#footer-right {
-	float: right;
-	letter-spacing: 10px;
-}
-
 .fa {
 	color: black;
+}
+
+.fa-icons-footer {
+	letter-spacing: 10px;
 }
 
 .wrapperxx {
@@ -38,4 +31,34 @@ html, body {
 	border-top: 1px solid #d9d9db;
 	width: 100%;
 	padding-top: 50px;
+}
+
+.footer-text {
+	font-size: 20px;
+	line-height: 2rem;
+}
+
+.powered-by a {
+	text-decoration: none;
+	color: red;
+}
+
+
+@keyframes flippity {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.flippity {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: flippity;
+  animation-name: flippity;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }

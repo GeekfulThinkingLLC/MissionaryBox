@@ -1,13 +1,33 @@
 <footer class="sixteen columns footer-css">
   <div class="container">
     <div class="footer-margin">
-      <div id="footer-left" class="columns alpha eight">
-        <p>Powered by <%= link_to 'GeekfulThinking', 'http://www.geekfulthinking.com' %></p>
+      <div class="row">
+
+        <div class="col col-md-6 text-center">
+          <p class="footer-text">There's nothing here yet. Most likely some contact info will go here, or maybe some info about the website altogether.</p>
+        </div>
+
+        <div class="col col-md-2">
+        </div>
+
+        <div class="col col-md-4 text-center">
+          <p class="footer-text">Find Us Other Places</p>
+          <span class="fa-icons-footer">
+          <%= link_fa_to 'facebook-official fa-3x', '', 'https://www.facebook.com' %>
+          <%= link_fa_to 'twitter-square fa-3x', '', 'https://www.twitter.com' %>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+
       </div>
 
-      <div id="footer-right">
-        <%= link_fa_to 'facebook-official fa-3x', '', 'https://www.facebook.com' %>
-        <%= link_fa_to 'twitter-square fa-3x', '', 'https://www.twitter.com' %>
+      <div class="col-md-4 text-right">
+        <p class="powered-by">Powered by <%= link_to 'GeekfulThinking', 'http://www.geekfulthinking.com', class: "flippity" %></p>
       </div>
     </div>
   </div>
