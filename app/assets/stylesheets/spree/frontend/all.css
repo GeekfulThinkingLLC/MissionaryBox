@@ -4,10 +4,6 @@
  *= require spree/frontend/screen
 */
 
-* {
-	margin: 0;
-}
-
 footer, .push {
 	height: 200px;
 }
