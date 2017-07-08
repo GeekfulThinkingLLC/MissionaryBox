@@ -47,3 +47,7 @@ html, body {
 	text-decoration: none;
 	color: red;
 }
+
+.header-text a {
+	color: black;
+}
