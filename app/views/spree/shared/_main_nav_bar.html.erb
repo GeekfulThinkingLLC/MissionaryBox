@@ -1,12 +1,10 @@
-<nav class="columns sixteen">
-  <ul id="main-nav-bar" class="inline" data-hook>
-    <li></li>
-    <li id="link-to-cart" data-hook>
-      <noscript>
-        <%#= link_to "Cart", spree.cart_path %>
-      </noscript>
-      &nbsp;
-    </li>
-  </ul>
- <!--  <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script> -->
+<nav id="top-nav-bar" class="columns sixteen navbar navbar-toggleable-md">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul id="nav-bar" class="inline header-text navbar-nav mr-auto">
+	    <li class="nav-item">My Cart<%= link_fa_to 'shopping-cart fa-2x', '', spree.cart_path %></li>
+	  </ul>
+  </div>
 </nav>
