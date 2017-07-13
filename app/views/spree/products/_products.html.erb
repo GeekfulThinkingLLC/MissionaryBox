@@ -12,7 +12,7 @@
 <div data-hook="products_search_results_heading">
   <% if products.empty? %>
     <div data-hook="products_search_results_heading_no_results_found">
-      <p><%= Spree.t(:no_products_found) %>. You can add products in the <%= link_to "Admin Dashboard", admin_login %></p>
+      <p><%= Spree.t(:no_products_found) %>. You can add products in the <%= link_to "Admin Dashboard", admin_login_url %></p>
     </div>
   <% elsif params.key?(:keywords) %>
     <div data-hook="products_search_results_heading_results_found">
