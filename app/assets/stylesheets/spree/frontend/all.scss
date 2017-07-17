@@ -1,8 +1,5 @@
-/*
-* This is a manifest file that includes stylesheets for spree_frontend
- *= require normalize
- *= require spree/frontend/screen
-*/
+@import 'normalize';
+@import 'spree/frontend/screen';
 
 footer, .push {
 	height: 200px;
@@ -83,11 +80,11 @@ html, body {
 
 .main-img {
 	
-	background-color: #d9d9d9;
+	background-color: black;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
-	margin-top: -153px;
+	margin-top: -260px;
 }
 
 @media only screen and (min-width: 400.1px) {
@@ -97,18 +94,18 @@ html, body {
 				background-size: cover;
 				background-repeat: no-repeat;
 				height: 500px;
-				margin-top: -153px;
+				margin-top: -180px;
     }
+}
+
+.float-right {
+	float: right;
 }
 
 .text-outer {
 	width: 100%;
 	text-align: center;
 	margin: auto 0;
-}
-
-.text h2 {
-	color: white;
 }
 
 .btn-style {
@@ -119,8 +116,8 @@ html, body {
 	margin-top: 10px;
 }
 
-nav#top-nav-bar {
-	margin-top: 50px;
+.button-margin {
+	margin-left: 802px;
 }
 
 .header-line-space {
@@ -129,6 +126,7 @@ nav#top-nav-bar {
 
 .fa {
 	color: white;
+	padding-right: 5px;
 }
 
 .card-pic-size {
@@ -157,3 +155,51 @@ nav#top-nav-bar {
 .header-background {
 		background: rgba(0,0,0,.5);
 	}
+
+.nav-link {
+	display: inline;
+}
+
+#app {
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+.nav-item {
+	padding: 0 3px 0 0;
+}
+
+/* test */
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  
+  @if $fallback {
+    font-size: $fallback;
+  }
+  
+  font-size: $responsive;
+}
+
+.limit-min-max h1 {
+  @include responsive-font(3vw, 25px, 90px);
+	color: white;
+  -webkit-text-stroke: 1.5px black;
+  padding: 90px 0 15px 0;
+}
+
+/* test */
