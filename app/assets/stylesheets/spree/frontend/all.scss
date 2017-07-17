@@ -1,0 +1,235 @@
+@import 'normalize';
+@import 'spree/frontend/screen';
+
+footer, .push {
+	height: 200px;
+}
+
+.fa-icons-footer {
+	letter-spacing: 10px;
+	background-color: black !important;
+}
+
+.black-icon {
+	color: black;
+}
+
+.wrapperxx {
+	min-height: 80%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;
+	min-width: 100%;
+}
+
+html, body {
+	height: 100%;
+}
+
+.footer-css {
+	border-top: 1px solid #d9d9db;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.footer-text {
+	font-size: 20px;
+	line-height: 2rem;
+}
+
+.powered-by {
+	text-decoration: none;
+	color: red;
+}
+
+.powered-by:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.header-text a {
+	color: black;
+}
+
+.footer-links-padding {
+	padding: 0px 10px 0px 10px;
+	font-size: 15px;
+	color: black;
+}
+
+.cart-or {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.steps-data {
+	padding: 0px 35px 0px 35px;
+}
+
+.final-order-padding {
+	padding: 0px 18px 0px 18px;
+}
+
+.header-background {
+	background: rgba(0,0,0,.5);
+}
+
+.homepage-background {
+	background-color: #d9d9d9;
+}
+
+.main-img {
+	
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-top: -260px;
+}
+
+@media only screen and (min-width: 400.1px) {
+    .main-img {
+    		
+				background-image: url('https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg'); 
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 500px;
+				margin-top: -180px;
+    }
+}
+
+.float-right {
+	float: right;
+}
+
+.text-outer {
+	width: 100%;
+	text-align: center;
+	margin: auto 0;
+}
+
+.btn-style {
+	background-color: white;
+	border: none;
+	border-radius: 20px;
+	color: black;
+	margin-top: 10px;
+}
+
+.button-margin {
+	margin-left: 802px;
+}
+
+.header-line-space {
+	letter-spacing: 2px;
+}
+
+.fa {
+	color: white;
+	padding-right: 5px;
+}
+
+.card-pic-size {
+	height: 20rem;
+}
+
+.card-container {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 25px;
+}
+
+.card-alignment-style {
+	margin: auto 0;
+}
+
+.img-size-sister {
+	height: 30rem;
+}
+
+.sister-btn-styles {
+	text-align: center;
+}
+
+.sister-btn-styles2 {
+	border-radius: 20px;
+	margin-bottom: 50px;
+	background-color: black;
+	border: none;
+}
+
+.sister-btn-styles2 h2 {
+	color: white;
+
+}
+
+.sister-card-background {
+	background-color: #d9d9d9;
+	border:none;
+}
+
+.sister-toggle-style {
+	text-align: center;
+}
+
+.toggle-text-right {
+	text-align: left;
+}
+
+
+.sister-container {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.header-background {
+		background: rgba(0,0,0,.5);
+	}
+
+.nav-link {
+	display: inline;
+}
+
+#app {
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+.nav-item {
+	padding: 0 3px 0 0;
+}
+
+/* test */
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  
+  @if $fallback {
+    font-size: $fallback;
+  }
+  
+  font-size: $responsive;
+}
+
+.limit-min-max h1 {
+  @include responsive-font(3vw, 25px, 90px);
+	color: white;
+  -webkit-text-stroke: 1.5px black;
+  padding: 90px 0 15px 0;
+}
+
+/* test */

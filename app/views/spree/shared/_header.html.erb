@@ -1,8 +1,9 @@
 <div class="header-background">
-	<div class="container">
-		<header id="header" class="row">
-		  <figure id="logo" class="columns six"><%= logo img_options: { class: 'img-responsive', width: 125} %></figure>
-		  <%= render partial: 'spree/shared/nav_bar' %>
-		</header>
+	<div class="container fluid">
+		<div class="row">
+			<div class="navbar-custom-margin">
+		  	<%= render partial: 'spree/shared/nav_bar' %>
+		  </div>
+		</div>
 	</div>
 </div>
