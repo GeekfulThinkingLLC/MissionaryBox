@@ -82,13 +82,23 @@ html, body {
 }
 
 .main-img {
-	min-width: 100%;
-	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
+	
+	background-color: #d9d9d9;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
 	margin-top: -153px;
-	min-width: 100%;
+}
+
+@media only screen and (min-width: 400.1px) {
+    .main-img {
+    		
+				background-image: url('https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg'); 
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 500px;
+				margin-top: -153px;
+    }
 }
 
 .text-outer {
@@ -146,8 +156,4 @@ nav#top-nav-bar {
 
 .header-background {
 		background: rgba(0,0,0,.5);
-		width: 150%;
-		height: 153px;
-		margin-top: -153px;
-		margin-left: -240px;
-}
+	}
