@@ -10,7 +10,7 @@ navbar includes care-packages - dropdown sisters coming soon!
 wireframe and images needed for site
 
 #TODO
-- Fix tax_category_ids in admin dashboard undefined method
+X Fix tax_category_ids in admin dashboard undefined method
 - Fix footer space at bottom of page
 - Fix mobile right scrolling, seems the image banner has too much width
-- Figure out how to link user session controller to be pushed up to heroku
+X Figure out how to link user session controller to be pushed up to heroku
