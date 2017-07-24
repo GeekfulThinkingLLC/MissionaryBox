@@ -86,8 +86,8 @@ footer, .push {
 	background-color: black;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 280px;
-	margin-top: -121px;
+	height: 150px;
+	margin-top: -225px;
 	width: 100%;
 }
 
@@ -97,8 +97,14 @@ footer, .push {
 				background-size: cover;
 				background-repeat: no-repeat;
 				height: 500px;
-				margin-top: -180px;
+				margin-top: -218px;
     }
+}
+
+@media only screen and (max-width: 650px) { 
+  .limit-min-max { 
+    display: none; 
+  } 
 }
 
 .float-right {
@@ -354,6 +360,7 @@ footer, .push {
 
 .navbar-toggleable-md {
 	z-index: 1000;
+	margin-bottom: 50px;
 }
 
 ul#products li .product-image img {
