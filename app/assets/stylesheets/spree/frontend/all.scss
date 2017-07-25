@@ -107,8 +107,11 @@ footer, .push {
   } 
 }
 
-.float-right {
-	float: right;
+@media only screen and (max-width: 650px) { 
+  .nav-item { 
+    margin-right: -72px;
+    text-align:right;
+  } 
 }
 
 .text-outer {
@@ -359,6 +362,10 @@ footer, .push {
 }
 
 .navbar-toggleable-md {
+	z-index: 1000;
+}
+
+.navbar {
 	z-index: 1000;
 }
 
