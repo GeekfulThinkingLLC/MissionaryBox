@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -34,3 +35,6 @@ gem 'solidus_auth_devise'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'sprockets-rails', '~> 3.2'
 gem 'jquery-ui-rails', '>= 5.0.5'
+gem 'paperclip-aws', '~> 1.6', '>= 1.6.8'
+gem 'paperclip'
+gem 'fog-aws'
