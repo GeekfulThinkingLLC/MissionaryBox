@@ -9,12 +9,13 @@
   <body>
     
     <div class="wrapperxx">
-      <div class="container">
-      <%= render partial: 'spree/shared/head' %>
-      <%= render partial: 'spree/shared/header' %>
+      <div class="container home-page">
+        <%= render partial: 'spree/shared/head' %>
+        <%= render partial: 'spree/shared/header' %>
+      </div>
 
 
-        <div id="wrapper" class="row" data-hook>
+        
 
           <%= taxon_breadcrumbs(@taxon) %>
 
@@ -24,13 +25,12 @@
 
             <%= flash_messages %>
             <%= yield %>
-          </div>
-        </div>
+          
 
           <%= yield :templates %>
 
       </div>
-    </div>
+    
     <div class="push"></div>
       <%= render partial: 'spree/shared/footer_custom' %>
 
