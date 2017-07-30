@@ -74,7 +74,8 @@ html, body {
 
 .main-img {
 	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
-	height: 650px;
+	height: 500px;
+	margin-top: -153px;
 }
 
 nav#top-nav-bar {
@@ -85,3 +86,9 @@ nav#top-nav-bar {
 	letter-spacing: 2px;
 }
 
+.fa {
+	color: white;
+}
+.transparent {
+	background: transparent;
+}
