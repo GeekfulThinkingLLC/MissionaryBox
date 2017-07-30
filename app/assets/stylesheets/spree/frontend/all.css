@@ -71,7 +71,17 @@ html, body {
 	padding: 0px 18px 0px 18px;
 }
 
+
 .main-img {
 	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
 	height: 650px;
 }
+
+nav#top-nav-bar {
+	margin-top: 50px;
+}
+
+.header-line-space {
+	letter-spacing: 2px;
+}
+
