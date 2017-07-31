@@ -73,6 +73,7 @@ html, body {
 
 
 .main-img {
+	width: 100%;
 	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
 	height: 500px;
 	margin-top: -153px;
@@ -113,6 +114,16 @@ nav#top-nav-bar {
 
 .card-pic-size {
 	height: 20rem;
+}
+
+.card-container {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 25px;
+}
+
+.card-alignment-style {
+	margin: auto 0;
 }
 
 .header-background {
