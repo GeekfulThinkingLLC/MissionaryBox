@@ -130,6 +130,15 @@ nav#top-nav-bar {
 	margin: auto 0;
 }
 
+.img-size-sister {
+	height: 30rem;
+}
+
+.sister-container {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 .header-background {
 		background: rgba(0,0,0,.5);
 		width: 150%;
