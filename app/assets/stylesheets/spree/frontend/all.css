@@ -8,12 +8,13 @@ footer, .push {
 	height: 200px;
 }
 
-.fa {
-	color: black;
-}
-
 .fa-icons-footer {
 	letter-spacing: 10px;
+	background-color: black !important;
+}
+
+.black-icon {
+	color: black;
 }
 
 .wrapperxx {
@@ -74,8 +75,11 @@ html, body {
 
 .main-img {
 	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 500px;
 	margin-top: -153px;
+	min-width: 100%;
 }
 
 .text-outer {
