@@ -134,3 +134,20 @@ nav#top-nav-bar {
 .card-alignment-style {
 	margin: auto 0;
 }
+
+.img-size-sister {
+	height: 30rem;
+}
+
+.sister-container {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.header-background {
+		background: rgba(0,0,0,.5);
+		width: 150%;
+		height: 153px;
+		margin-top: -153px;
+		margin-left: -240px;
+}
