@@ -22,6 +22,7 @@ footer, .push {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -200px;
+	min-width: 100%;
 }
 
 html, body {
@@ -72,9 +73,16 @@ html, body {
 	padding: 0px 18px 0px 18px;
 }
 
+.header-background {
+	background: rgba(0,0,0,.5);
+}
+
+.homepage-background {
+	background-color: #d9d9d9;
+}
 
 .main-img {
-	width: 100%;
+	min-width: 100%;
 	background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -111,9 +119,6 @@ nav#top-nav-bar {
 
 .fa {
 	color: white;
-}
-.transparent {
-	background: transparent;
 }
 
 .card-pic-size {
