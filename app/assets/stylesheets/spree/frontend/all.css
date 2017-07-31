@@ -111,7 +111,14 @@ nav#top-nav-bar {
 	background: transparent;
 }
 
-
 .card-pic-size {
 	height: 20rem;
+}
+
+.header-background {
+		background: rgba(0,0,0,.5);
+		width: 150%;
+		height: 153px;
+		margin-top: -153px;
+		margin-left: -240px;
 }
