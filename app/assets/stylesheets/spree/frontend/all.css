@@ -78,6 +78,24 @@ html, body {
 	margin-top: -153px;
 }
 
+.text-outer {
+	width: 100%;
+	text-align: center;
+	margin: auto 0;
+}
+
+.text h2 {
+	color: white;
+}
+
+.btn-style {
+	background-color: white;
+	border: none;
+	border-radius: 20px;
+	color: black;
+	margin-top: 10px;
+}
+
 nav#top-nav-bar {
 	margin-top: 50px;
 }
@@ -91,6 +109,10 @@ nav#top-nav-bar {
 }
 .transparent {
 	background: transparent;
+}
+
+.card-pic-size {
+	height: 20rem;
 }
 
 .header-background {
