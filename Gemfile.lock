@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/boomerdigital/solidus_email_to_friend.git
+  revision: 2727743cbc9a1845fe8df3d5f909981402137077
+  branch: master
+  specs:
+    solidus_email_to_friend (1.3.0)
+      recaptcha (>= 0.3.1)
+      solidus_core (>= 1.0.0, < 3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -152,6 +161,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
+    json (2.1.0)
     kaminari (1.0.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.0.1)
@@ -251,6 +261,8 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    recaptcha (4.3.1)
+      json
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -395,6 +407,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   solidus
   solidus_auth_devise
+  solidus_email_to_friend!
   spring
   spring-watcher-listen (~> 2.0.0)
   sprockets-rails (~> 3.2)
