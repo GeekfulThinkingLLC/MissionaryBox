@@ -15,6 +15,7 @@ X Figure out how to link user session controller to be pushed up to heroku
 - Link product images/descriptions to homepage for easier admin adjustability
 - Dropdown in shipping address to only ship to available places
 - shipping address phone validator
+- get thumbnail pictures to pull up when clicked for products, or enlarged
 
 #TODO for MissionaryBox
 - Own S3 account and bucket set up
