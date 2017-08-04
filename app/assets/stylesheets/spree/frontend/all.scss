@@ -249,3 +249,17 @@ html, body {
 .fa-twitter-square:before {
 	color: black;
 }
+
+.dropdown-item {
+  text-align: right;
+  margin: 0px 47px 0px 0px;
+  padding-right: 10px;
+}
+
+.dropdown-item:hover {
+	background-color: pink;
+}
+
+.dropdown-toggle::after {
+	color: white;
+}
