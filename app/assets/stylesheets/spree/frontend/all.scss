@@ -257,9 +257,17 @@ html, body {
 }
 
 .dropdown-item:hover {
-	background-color: pink;
+	background-color: #bcbcbc;
 }
 
 .dropdown-toggle::after {
 	color: white;
+}
+
+.dropdown-menu {
+	background-color: #d9d9d9;
+}
+
+.dropdown-divider {
+	background-color: #bcbcbc;
 }
