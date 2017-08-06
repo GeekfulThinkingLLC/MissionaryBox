@@ -1,5 +1,9 @@
-@import 'normalize';
-@import 'spree/frontend/screen';
+/*
+*= require normalize
+*= require spree/frontend/screen
+*= require gritter
+*= require jquery-ui
+*/
 
 footer, .push {
 	height: 200px;
