@@ -287,10 +287,16 @@ footer, .push {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 650px) {
 	.product-description-size {
 		font-size: 20px;
 		line-height: 25px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#product-description .product-title {
+		font-size: 15px;
 	}
 }
 
@@ -405,5 +411,5 @@ ul#products li .product-image img {
 
 .email-to-friend {
 	color: black;
-	margin-top: 20px;
+	margin-top: 40px;
 }
