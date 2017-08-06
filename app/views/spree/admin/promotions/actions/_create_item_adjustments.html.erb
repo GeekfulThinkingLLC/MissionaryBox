@@ -1,0 +1,6 @@
+<%= render(
+  "spree/admin/promotions/actions/promotion_calculators_with_custom_fields",
+  calculators: Spree::Promotion::Actions::CreateItemAdjustments.calculators,
+  promotion_action: promotion_action,
+  param_prefix: param_prefix
+) %>
