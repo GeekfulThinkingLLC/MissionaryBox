@@ -33,8 +33,5 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'sprockets-rails', '~> 3.2'
-<<<<<<< HEAD
 gem 'gritter', '~> 1.2'
 gem 'jquery-ui-rails', '>= 5.0.5'
-=======
->>>>>>> 5f688b0df4fefc39583da1780277da745ece1f93
