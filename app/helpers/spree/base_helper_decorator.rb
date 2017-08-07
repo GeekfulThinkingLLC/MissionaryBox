@@ -64,7 +64,7 @@ module Spree
 
       flash.each do |msg_type, text|
         unless ignore_types.include?(msg_type)
-          concat(content_tag(:h1, text, class: "flash #{msg_type} text-right"))
+          concat(content_tag(:div, text, class: "flash #{msg_type} text-right"))
         end
       end
       nil
@@ -74,11 +74,14 @@ module Spree
 	    alert = flash[:alert]
 	    error = flash[:error]
 	    notice = flash[:notice]
+      success = flash[:success]
 
 	    if alert
 	      js add_gritter(alert, title: "Trevor Howard Portfolio", sticky: false, image: :warning)
 	    elsif error
 	      js add_gritter(error, title: "Trevor Howard Portfolio", sticky: false, image: :error)
+      elsif success
+        js add_gritter(success, title: "Trevor Howard Portfolio", sticky: false, image: :error)
 	    else notice
 	      js add_gritter(notice, title: "Trevor Howard Portfolio", sticky: false, image: :success)
 	    end
