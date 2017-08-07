@@ -296,6 +296,7 @@ html, body {
 	color: black;
 }
 
+<<<<<<< HEAD
 .product-img-size {
 	width: 100%;
 }
@@ -307,4 +308,29 @@ html, body {
 
 .product-form-padding {
 	padding-top: 25px;
+=======
+.checkout-forms-center {
+	text-align: center;
+}
+
+#checkout {
+	margin-left: 80px;
+}
+
+.form-buttons {
+	margin: 30px 0px 0px 15px;
+}
+
+.product-img-size {
+    width: 100%;
+}
+
+.product-description-size {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.product-form-padding {
+    padding-top: 25px;
+>>>>>>> 7eed49bdfd8d9e451dcfb9e37751d939620c7ea2
 }
