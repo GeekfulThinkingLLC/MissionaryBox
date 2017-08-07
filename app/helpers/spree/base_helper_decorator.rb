@@ -70,23 +70,6 @@ module Spree
       nil
     end
 
-    def alerts
-	    alert = flash[:alert]
-	    error = flash[:error]
-	    notice = flash[:notice]
-      success = flash[:success]
-
-	    if alert
-	      js add_gritter(alert, title: "Trevor Howard Portfolio", sticky: false, image: :warning)
-	    elsif error
-	      js add_gritter(error, title: "Trevor Howard Portfolio", sticky: false, image: :error)
-      elsif success
-        js add_gritter(success, title: "Trevor Howard Portfolio", sticky: false, image: :error)
-	    else notice
-	      js add_gritter(notice, title: "Trevor Howard Portfolio", sticky: false, image: :success)
-	    end
-    end
-
     def taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
       return '' if current_page?('/') || taxon.nil?
 
