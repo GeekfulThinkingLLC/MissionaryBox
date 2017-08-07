@@ -6066,171 +6066,23 @@ table.order-summary tbody tr td:first-child a {
     text-align: center;
   }
 }
-/* line 1, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-#gritter-notice-wrapper {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 301px;
-  z-index: 9999;
-}
-/* line 8, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-#gritter-notice-wrapper.top-left {
-  left: 20px;
-  right: auto;
-}
-/* line 13, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-#gritter-notice-wrapper.bottom-right {
-  top: auto;
-  left: auto;
-  bottom: 20px;
-  right: 20px;
-}
-/* line 20, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-#gritter-notice-wrapper.bottom-left {
-  top: auto;
-  right: auto;
-  bottom: 20px;
-  left: 20px;
-}
-
-/* line 28, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-item-wrapper {
-  position: relative;
-  margin: 0 0 10px 0;
-  background: url(url(/assets/ie-spacer-548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87.gif));
-}
-
-/* line 34, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-top {
-  background: url(url(/assets/gritter-25e1cc73a3dd60281ade9c1257ed8b772fc99c4ce5b3c6e07134115fa4a38a04.png)) no-repeat left -30px;
-  height: 10px;
-}
-
-/* line 38, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.hover .gritter-top {
-  background-position: right -30px;
-}
-
-/* line 41, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-bottom {
-  background: url(url(/assets/gritter-25e1cc73a3dd60281ade9c1257ed8b772fc99c4ce5b3c6e07134115fa4a38a04.png)) no-repeat left bottom;
-  height: 8px;
-  margin: 0;
-}
-
-/* line 46, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.hover .gritter-bottom {
-  background-position: bottom right;
-}
-
-/* line 50, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-item {
-  display: block;
-  color: #eee;
-  padding: 2px 11px 8px 11px;
-  font-size: 11px;
-  font-family: verdana;
-  -webkit-filter: inherit;
-          filter: inherit;
-}
-/* line 58, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-item.gritter-css2 {
-  background: url(url(/assets/gritter-25e1cc73a3dd60281ade9c1257ed8b772fc99c4ce5b3c6e07134115fa4a38a04.png)) no-repeat left -40px;
-}
-/* line 61, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-item.gritter-css3 {
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding-top: 12px;
-  padding-bottom: 16px;
-}
-/* line 70, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-item p {
-  padding: 0;
-  margin: 0;
-}
-
-/* line 75, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.hover .gritter-item.gritter-css2 {
-  background-position: right -40px;
-}
-
-/* line 78, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.hover .gritter-item.gritter-css3 {
-  padding: 10px 9px 14px 9px;
-  border: solid 2px #fff;
-}
-
-/* line 83, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-close {
-  display: none;
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  -webkit-filter: inherit;
-          filter: inherit;
-}
-
-/* line 93, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-css2 .gritter-close {
-  background: url(url(/assets/gritter-25e1cc73a3dd60281ade9c1257ed8b772fc99c4ce5b3c6e07134115fa4a38a04.png)) no-repeat left top;
-}
-
-/* line 96, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-css3 .gritter-close {
-  background: url(url(/assets/gritter-close-76efc9d3f6a516a817908cad53584510a8cbf5d4ac482e80c5ec93bababccf15.png)) no-repeat;
-}
-
-/* line 100, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-title {
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 0 7px 0;
-  display: block;
-  text-shadow: 1px 1px #000;
-  /* Not supported by IE :( */
-}
-
-/* line 107, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-image {
-  width: 48px;
-  height: 48px;
-  float: left;
-}
-
-/* line 112, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-with-image,
-.gritter-without-image {
-  padding: 0 0 5px 0;
-}
-
-/* line 116, /Users/trevorhoward/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss */
-.gritter-with-image {
-  width: 220px;
-  float: right;
-}
-
-/* line 6, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 4, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 footer, .push {
   height: 200px;
 }
 
-/* line 10, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 8, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .fa-icons-footer {
   letter-spacing: 10px;
   color: black !important;
 }
 
-/* line 15, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 13, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .black-icon {
   color: black;
 }
 
-/* line 19, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 17, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .wrapperxx {
   min-height: 80%;
   height: auto !important;
@@ -6239,12 +6091,12 @@ footer, .push {
   min-width: 100%;
 }
 
-/* line 27, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 25, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 html, body {
   height: 100%;
 }
 
-/* line 31, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 29, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .footer-css {
   border-top: 1px solid black;
   width: 100%;
@@ -6253,63 +6105,63 @@ html, body {
   height: 396px;
 }
 
-/* line 39, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 37, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .footer-text {
   font-size: 20px;
   line-height: 2rem;
 }
 
-/* line 44, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 42, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .powered-by {
   text-decoration: none;
   color: red;
 }
 
-/* line 49, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 47, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .powered-by:hover {
   text-decoration: none;
   color: red;
 }
 
-/* line 54, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 52, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .header-text a {
   color: black;
 }
 
-/* line 58, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 56, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .footer-links-padding {
   padding: 0px 10px 0px 10px;
   font-size: 15px;
   color: black;
 }
 
-/* line 64, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 62, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .cart-or {
   font-size: 20px;
   font-weight: 500;
 }
 
-/* line 69, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 67, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .steps-data {
   padding: 0px 35px 0px 35px;
 }
 
-/* line 73, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 71, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .final-order-padding {
   padding: 0px 18px 0px 18px;
 }
 
-/* line 77, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 75, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .header-background {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 81, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 79, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .homepage-background {
   background-color: #d9d9d9;
 }
 
-/* line 85, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 83, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .main-img {
   background-color: black;
   background-size: cover;
@@ -6319,7 +6171,7 @@ html, body {
 }
 
 @media only screen and (min-width: 400.1px) {
-  /* line 95, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+  /* line 93, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
   .main-img {
     background-image: url("https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg");
     background-size: cover;
@@ -6328,19 +6180,19 @@ html, body {
     margin-top: -180px;
   }
 }
-/* line 105, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 103, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .float-right {
   float: right;
 }
 
-/* line 109, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 107, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .text-outer {
   width: 100%;
   text-align: center;
   margin: auto 0;
 }
 
-/* line 115, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 113, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .btn-style {
   background-color: white;
   border: none;
@@ -6349,57 +6201,57 @@ html, body {
   margin-top: 10px;
 }
 
-/* line 123, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 121, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .button-margin {
   margin-left: 802px;
 }
 
-/* line 127, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 125, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .header-line-space {
   letter-spacing: 2px;
 }
 
-/* line 131, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 129, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .fa {
   color: white;
   padding-right: 5px;
 }
 
-/* line 136, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 134, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .card-pic-size {
   height: 20rem;
 }
 
-/* line 140, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 138, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .card-container {
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 25px;
 }
 
-/* line 146, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 144, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .product-btn-styles {
   border-radius: 20px;
   background-color: black;
   border: none;
 }
 
-/* line 152, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 150, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .card-alignment-style {
   margin: auto 0;
 }
 
-/* line 156, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 154, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .img-size-sister {
   height: 15rem;
 }
 
-/* line 160, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 158, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-btn-styles {
   text-align: center;
 }
 
-/* line 164, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 162, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-btn-styles2 {
   border-radius: 20px;
   margin-bottom: 50px;
@@ -6407,56 +6259,56 @@ html, body {
   border: none;
 }
 
-/* line 171, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 169, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-btn-styles2 h2 {
   color: white;
 }
 
-/* line 176, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 174, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-card-background {
   background-color: #d9d9d9;
   border: none;
 }
 
-/* line 181, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 179, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-toggle-style {
   text-align: center;
 }
 
-/* line 185, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 183, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .toggle-text-right {
   text-align: left;
 }
 
-/* line 190, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 188, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .sister-container {
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* line 195, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 193, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .header-background {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 199, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 197, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .nav-link {
   display: inline;
 }
 
-/* line 203, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 201, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 #app {
   font-size: 1rem;
   letter-spacing: 1px;
 }
 
-/* line 208, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 206, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .nav-item {
   padding: 0 3px 0 0;
 }
 
 /* test */
-/* line 238, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 236, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .limit-min-max h1 {
   font-size: 3vw;
   color: white;
@@ -6464,111 +6316,111 @@ html, body {
   padding: 90px 0 15px 0;
 }
 @media (max-width: 833.3333333333px) {
-  /* line 238, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+  /* line 236, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
   .limit-min-max h1 {
     font-size: 25px;
   }
 }
 @media (min-width: 3000px) {
-  /* line 238, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+  /* line 236, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
   .limit-min-max h1 {
     font-size: 90px;
   }
 }
 
 /* test */
-/* line 247, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 245, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .fa-facebook-official:before {
   color: black;
 }
 
-/* line 251, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 249, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .fa-twitter-square:before {
   color: black;
 }
 
-/* line 255, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 253, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .dropdown-item {
   text-align: right;
   margin: 0px 47px 0px 0px;
   padding-right: 10px;
 }
 
-/* line 261, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 259, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .dropdown-item:hover {
   background-color: #bcbcbc;
 }
 
-/* line 265, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 263, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .dropdown-toggle::after {
   color: white;
 }
 
-/* line 269, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 267, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .dropdown-menu {
   background-color: #d9d9d9;
 }
 
-/* line 273, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 271, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .dropdown-divider {
   background-color: #bcbcbc;
 }
 
-/* line 277, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 275, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .login-card-style {
   background-color: #d9d9d9;
   padding: 20px 25px 5px 25px;
 }
 
-/* line 282, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 280, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .check-box-size {
   margin-bottom: 8px;
 }
 
-/* line 286, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 284, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .login-helpers {
   font-size: 1.2rem;
   padding-bottom: 15px;
 }
 
-/* line 291, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 289, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .login-helpers a {
   text-decoration: none;
   color: black;
 }
 
-/* line 296, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 294, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .product-img-size {
   width: 100%;
 }
 
-/* line 300, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 298, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .product-description-size {
   font-size: 20px;
   line-height: 25px;
 }
 
-/* line 305, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 303, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .product-form-padding {
   padding-top: 25px;
 }
 
-/* line 309, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 307, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .checkout-forms-center {
   text-align: center;
 }
 
-/* line 313, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 311, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 #checkout {
   margin-left: 40px;
 }
 
-/* line 317, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 315, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .form-buttons {
   margin: 30px 0px 0px 15px;
 }
 
-/* line 321, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+/* line 319, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
 .login-card-margin {
   margin-bottom: 20px;
 }
