@@ -7,3 +7,7 @@
  *= require_self
  *= require_tree .
 */
+
+.admin-nav-header {
+	background-color: black;
+}
