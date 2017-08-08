@@ -344,3 +344,7 @@ footer, .push {
 	right: -3rem;
 	top: 2rem;
 }
+
+ul#products li .product-image img {
+	width: 75%;
+}
