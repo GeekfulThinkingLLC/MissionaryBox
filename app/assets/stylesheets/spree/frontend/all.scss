@@ -2,6 +2,10 @@
 @import 'spree/frontend/screen';
 @import 'jquery-ui';
 
+html, body {
+	height: 100%;
+}
+
 footer, .push {
 	height: 200px;
 }
@@ -23,22 +27,18 @@ footer, .push {
 	min-width: 100%;
 }
 
-html, body {
-	height: 100%;
-}
-
 .footer-css {
 	border-top: 1px solid black;
 	width: 100%;
 	padding-top: 50px;
 	background-color: #d9d9d9;
-	height: 396px;
+	height: auto;
 }
 
-.footer-text {
-	font-size: 20px;
+/*.footer-text {
+	font-size: 1vh;
 	line-height: 2rem;
-}
+}*/
 
 .powered-by {
 	text-decoration: none;
@@ -55,7 +55,7 @@ html, body {
 }
 
 .footer-links-padding {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 0px 0px 30px;
 	font-size: 15px;
 	color: black;
 }
@@ -134,6 +134,10 @@ html, body {
 
 .card-pic-size {
 	height: 20rem;
+}
+
+.card-padding {
+	margin-bottom: 15px;
 }
 
 .card-container {
@@ -234,6 +238,13 @@ html, body {
   }
   
   font-size: $responsive;
+}
+
+.footer-min-max {
+  @include responsive-font(1.4vw, 12px, 90px);
+	color: black;
+	line-height: 4vh;
+  /*-webkit-text-stroke: 1.5px black; */
 }
 
 .limit-min-max h1 {
