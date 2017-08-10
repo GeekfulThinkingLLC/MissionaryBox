@@ -15,6 +15,7 @@
             <div class="card-block">
               <% if Spree::Config[:allow_guest_checkout] %>
               <div id="guest_checkout" data-hook>
+
                 <h6 class="text-center login-helpers"><%= Spree.t(:guest_user_account) %></h6>
                 <% if flash[:registration_error] %>
                   <div class='flash error'><%= flash[:registration_error] %></div>
@@ -26,11 +27,12 @@
                   </p>
                   <p><%= f.submit Spree.t(:continue), class: 'btn btn-primary btn-block' %></p>
                 <% end %>
+                
               </div>
             </div>
           </div>
         </div>
-        <% end %>
+              <% end %>
     </div>
   </div>
 </div>
