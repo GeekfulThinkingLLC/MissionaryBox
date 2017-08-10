@@ -41,6 +41,13 @@ footer, .push {
 	height: auto;
 }
 
+@media only screen and (max-width: 650px) { 
+  .footer-css { 
+    min-height: 548px;
+    height: auto; 
+  } 
+}
+
 .powered-by {
 	text-decoration: none;
 	color: red;
