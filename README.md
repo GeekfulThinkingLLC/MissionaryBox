@@ -14,6 +14,9 @@ X Fix tax_category_ids in admin dashboard undefined method
 X Fix footer space at bottom of page
 X Fix mobile right scrolling, seems the image banner has too much width
 X Figure out how to link user session controller to be pushed up to heroku
+- Link product images/descriptions to homepage for easier admin adjustability
+- Dropdown in shipping address to only ship to available places
+- shipping address phone validator
 
 #TODO for MissionaryBox
 - Own S3 account and bucket set up
