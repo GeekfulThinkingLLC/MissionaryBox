@@ -18,6 +18,7 @@ X Figure out how to link user session controller to be pushed up to heroku
 X get thumbnail pictures to pull up when clicked for products, or enlarged
 X footer is all jacked again, white space while on mobile at bottom of page
 - fix cart show page on mobile, maybe do an if/else in the code file, find out if possible to use one set of styles if on mobile vs full screen
+- Figure out required: acceptance for terms and conditions before placing order
 
 #TODO for MissionaryBox
 - Own S3 account and bucket set up
