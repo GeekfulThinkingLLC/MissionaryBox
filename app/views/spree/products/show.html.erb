@@ -45,6 +45,8 @@
 
             </div>
 
+            <h5 class="email-to-friend">Know someone who would like this? <%= link_to "Email a friend", email_to_friend_path("product", @product) %></h5>
+
             <%= render partial: 'taxons' %>
 
           </div>
