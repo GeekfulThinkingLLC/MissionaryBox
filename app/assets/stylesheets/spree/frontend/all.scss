@@ -419,3 +419,12 @@ ul#products li .product-image img {
 	height: auto;
 	min-height: auto;
 }
+
+ul#products li .product-image {
+	padding: 0px;
+	border: none;
+}
+
+ul#products li .product-image img {
+	width: 100%;
+}
