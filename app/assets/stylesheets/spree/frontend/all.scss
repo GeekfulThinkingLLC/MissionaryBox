@@ -231,7 +231,7 @@ footer, .push {
 }
 
 .nav-item {
-	padding: 0 3px 0 0;
+	padding: 0 20px 0 0;
 }
 
 /* test */
@@ -361,7 +361,7 @@ footer, .push {
 }
 
 .product-form-padding {
-	padding-top: 25px;
+	padding: 25px 5px 0px 5px;
 }
 
 .checkout-forms-center {
@@ -383,6 +383,10 @@ footer, .push {
 .navbar-toggler-right {
 	right: -3rem;
 	top: 2rem;
+}
+
+.navbar-light .navbar-toggler {
+	margin-right: 10px;
 }
 
 .navbar-toggleable-md {
