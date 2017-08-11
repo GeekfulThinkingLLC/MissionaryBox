@@ -6571,3 +6571,8 @@ ul#products li .product-image img {
 .email-to_friend {
   display: none;
 }
+
+/* line 418, /Users/trevorhoward/GeekfulThinking/MissionaryBox/app/assets/stylesheets/spree/frontend/all.scss */
+#product-images #main-image img {
+  width: 100%;
+}
