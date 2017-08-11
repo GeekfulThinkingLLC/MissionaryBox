@@ -39,3 +39,4 @@ gem 'paperclip-aws', '~> 1.6', '>= 1.6.8'
 gem 'paperclip'
 gem 'fog-aws'
 gem 'solidus_email_to_friend', github: 'boomerdigital/solidus_email_to_friend', branch: 'master'
+gem "solidus_gateway"
