@@ -108,8 +108,8 @@ footer, .push {
 				background-image: url('https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg'); 
 				background-size: cover;
 				background-repeat: no-repeat;
-				height: 500px;
-				margin-top: -218px;
+				height: 350px;
+				margin-top: 0px;
     }
 }
 
@@ -319,7 +319,7 @@ footer, .push {
   @include responsive-font(3vw, 25px, 90px);
 	color: white;
   -webkit-text-stroke: 1.5px black;
-  padding: 90px 0 15px 0;
+  padding: 0px 0 15px 0;
   max-width: 100%;
 }
 
@@ -355,7 +355,7 @@ footer, .push {
 
 .limit-min-max {
 	width: 100%;
-	margin-top: 15%;
+	margin-top: 9%;
 }
 
 /* test */
