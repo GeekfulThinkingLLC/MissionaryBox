@@ -37,10 +37,10 @@ footer, .push {
 }
 
 .footer-css {
-	border-top: 1px solid black;
+	border-top: 1px solid white;
 	width: 100%;
 	padding-top: 50px;
-	background-color: #d9d9d9;
+	background-color: black;
 	min-height: 355px;
 	height: auto;
 	overflow-y: hidden;
@@ -87,11 +87,11 @@ footer, .push {
 }
 
 .header-background {
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,1);
 }
 
 .homepage-background {
-	background-color: #d9d9d9;
+	background-color: black;
 }
 
 .main-img {
@@ -228,14 +228,14 @@ footer, .push {
 .sister-btn-styles2 {
 	border-radius: 20px;
 	margin-bottom: 50px;
-	background-color: black;
+	background-color: white;
 	border: none;
 	width: 80%;
 	white-space: normal;
 }
 
 .sister-btn-styles2 h2 {
-	color: white;
+	color: black;
 
 }
 
@@ -257,10 +257,6 @@ footer, .push {
 	text-align: center;
 	margin-bottom: 50px;
 }
-
-.header-background {
-		background: rgba(0,0,0,.5);
-	}
 
 .nav-link {
 	display: inline;
@@ -303,14 +299,14 @@ footer, .push {
 
 .footer-min-max {
   @include responsive-font(1.4vw, 12px, 90px);
-	color: black;
+	color: white;
 	line-height: 4vh;
   /*-webkit-text-stroke: 1.5px black; */
 }
 
 .footer-min-max a {
   @include responsive-font(.9vw, 10px, 20px);
-	color: black;
+	color: white;
 	line-height: 4vh;
   /*-webkit-text-stroke: 1.5px black; */
 }
@@ -360,26 +356,17 @@ footer, .push {
 
 /* test */
 
-.fa-facebook-official:before {
-	color: black;
-}
-
-.fa-twitter-square:before {
-	color: black;
-}
-
 .dropdown-item {
   text-align: right;
-  margin: 0px 47px 0px 0px;
-  padding-right: 10px;
+  padding: 3px 10px 7px 0px;
 }
 
 .dropdown-item:hover {
 	background-color: #bcbcbc;
 }
 
-.dropdown-toggle::after {
-	color: white;
+.dropdown-menu-right {
+	right: 25px;
 }
 
 .dropdown-menu {
@@ -426,7 +413,8 @@ footer, .push {
 }
 
 .login-card-margin {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .navbar-toggler-right {
@@ -444,6 +432,7 @@ footer, .push {
 
 .navbar {
 	z-index: 1000;
+	padding-left: 40px;
 }
 
 ul#products li .product-image img {
@@ -496,10 +485,6 @@ a.button {
 
 .cart-mobile-config {
 	width: 100%;
-}
-
-.fa-instagram:before {
-	color: black;
 }
 
 #background-video {
