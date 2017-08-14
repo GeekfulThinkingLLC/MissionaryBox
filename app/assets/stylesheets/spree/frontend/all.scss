@@ -258,7 +258,7 @@ footer, .push {
 }
 
 .img-size-sister {
-	height: 15rem;
+	width: 80%;
 }
 
 .sister-btn-styles {
@@ -281,6 +281,8 @@ footer, .push {
 .sister-card-background {
 	background-color: black;
 	border:none;
+	height: 100%;
+	padding-bottom: 4rem;
 }
 
 .text-white h1 {
@@ -419,7 +421,10 @@ footer, .push {
 
 .limit-min-max {
 	width: 100%;
-	margin-top: 9%;
+	margin-top: 4%;
+	background-color: rgba(0,0,0,.3);
+	padding: 3rem;
+	border-radius: 1rem;
 }
 
 /* test */

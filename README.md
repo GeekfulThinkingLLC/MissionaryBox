@@ -48,7 +48,7 @@ make the picture span across the entire drop down  with the text on the picture
 
 X make all buttons the standard blue
 
-24 month subscription card container
+X 24 month subscription card container
 
 
 X https://johnsonbrothersonline.com/checkout/ piggyback on this for the countries we can ship to.
