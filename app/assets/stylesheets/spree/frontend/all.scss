@@ -302,7 +302,7 @@ footer, .push {
 }
 
 .nav-item {
-	padding: 0 20px 0 0;
+	padding: 0px 0px 0px 20px;
 }
 
 @media only screen and (max-width: 650px) { 
@@ -313,6 +313,12 @@ footer, .push {
 
 .social-navbar {
 	word-spacing: 1rem;
+}
+
+@media only screen and (max-width: 650px) { 
+  .social-navbar { 
+	display: none;
+  } 
 }
 
 /* test */
@@ -488,7 +494,11 @@ footer, .push {
 
 .navbar {
 	z-index: 1000;
-	padding-left: 40px;
+}
+
+.logo-margin-auto img {
+	display: block;
+	margin: 0 auto;
 }
 
 ul#products li .product-image img {
