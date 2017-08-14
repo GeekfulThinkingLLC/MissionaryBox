@@ -27,3 +27,28 @@ X footer is all jacked again, white space while on mobile at bottom of page
 - Privacy Notice
 - Stripe payment info
 - Styling tips
+
+
+Missionary box styles
+
+Header / Nav
+
+Update nav bar so it is a separate div from the picture imitate meundies.com
+
+logo in the middle like dollar shave club
+
+social media up on the top of the nav bar
+
+facebook, instagram, twitter, snap chat,
+
+
+
+product instead of people on the sisters drop down
+make the picture span across the entire drop down  with the text on the picture
+
+make all buttons the standard blue
+
+24 month subscription card container
+
+
+https://johnsonbrothersonline.com/checkout/ piggyback on this for the countries we can ship to.
