@@ -1,29 +1,31 @@
-<div class="container login-card-margin">
-    <div class="card login-card-style">
-      <div class="card-block">
-        <% @body_id = 'signup' %>
+<div class="login-page-styles">
+  <div class="container login-card-margin">
+      <div class="card login-card-style">
+        <div class="card-block">
+          <% @body_id = 'signup' %>
 
-        <%= render 'spree/shared/error_messages', target: resource %>
+          <%= render 'spree/shared/error_messages', target: resource %>
 
-        <div id="new-customer">
-          <h6 class="text-center login-helpers"><%= Spree.t(:new_customer) %></h6>
+          <div id="new-customer">
+            <h6 class="text-center login-helpers"><%= Spree.t(:new_customer) %></h6>
 
-          <div data-hook="signup">
-            <%= form_for resource, as: :spree_user, url: spree.registration_path(resource) do |f| %>
-              <div data-hook="signup_inside_form">
-                <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
-                <p><%= f.submit Spree.t(:create), class: 'btn btn-primary btn-block' %></p>
+            <div data-hook="signup">
+              <%= form_for resource, as: :spree_user, url: spree.registration_path(resource) do |f| %>
+                <div data-hook="signup_inside_form">
+                  <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
+                  <p><%= f.submit Spree.t(:create), class: 'btn btn-primary btn-block' %></p>
+                </div>
+              <% end %>
+              <div class="text-center" style="font-size: 14px; color: black; margin-bottom: 10px">Already have an account?</div>
+              <div class="text-center login-helpers">
+                <%= link_to Spree.t(:login_as_existing), spree.login_path %>
               </div>
-            <% end %>
-            <div class="text-center" style="font-size: 14px; color: black; margin-bottom: 10px">Already have an account?</div>
-            <div class="text-center login-helpers">
-              <%= link_to Spree.t(:login_as_existing), spree.login_path %>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-    </div>
-</div>
+  </div>
 
-<div data-hook="login_extras"></div>
+  <div data-hook="login_extras"></div>
+</div>
