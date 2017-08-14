@@ -490,7 +490,7 @@ footer, .push {
 	z-index: 1000;
 }
 
-@media only screen and (min-width: 650px) { 
+@media only screen and (min-width: 500px) { 
 	.logo-margin-auto img {
 		display: block;
 		margin: 0 auto;
@@ -498,7 +498,7 @@ footer, .push {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
 	.logo-margin-auto img {
 		width: 300%;
 	}
