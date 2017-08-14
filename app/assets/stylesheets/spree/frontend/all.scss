@@ -473,6 +473,7 @@ ul#products li .product-image img {
 
 .products-show-margin {
 	background-color: #333333;
+	padding-bottom: 1px;
 }
 
 .captcha-width {
@@ -502,6 +503,14 @@ ul#products li .product-image img {
 
 #product-thumbnails li {
 	border: none;
+}
+
+#product-images #product-thumbnails li {
+	background-color: #333333;
+}
+
+#product-thumbnails li img {
+	height: 3.5rem;
 }
 
 ul#products li .product-image {
