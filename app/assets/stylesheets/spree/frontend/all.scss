@@ -151,6 +151,7 @@ footer, .push {
 .card-block {
 	background-color: #333333;
 	color: white;
+	height: 15rem;
 }
 
 .text-outer {
@@ -232,11 +233,16 @@ footer, .push {
 	color: white;
 }
 
+.card-text {
+	padding: 0px;
+	height: 7rem;
+}
+
 @media only screen and (max-width: 650px) { 
   .card-text { 
     font-size: 9px;
-    margin-top: -1rem;
-    margin-bottom: 0.1rem;
+    margin-top: -.5rem;
+    height: 9rem;
   } 
 }
 
