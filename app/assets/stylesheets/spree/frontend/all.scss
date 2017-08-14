@@ -290,7 +290,13 @@ footer, .push {
 }
 
 .nav-item {
+	padding: 0 20px 0 0;
+}
+
+@media only screen and (max-width: 650px) { 
+  .nav-item { 
 	padding: 0 65px 0 0;
+  } 
 }
 
 /* test */
@@ -455,7 +461,7 @@ footer, .push {
 	top: 2rem;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-toggler {
 	margin-right: 55px;
 	background-color: #333333;
 }
