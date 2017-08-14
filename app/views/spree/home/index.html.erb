@@ -22,9 +22,9 @@
 			<div class="card card-padding">
 			  <img class="card-img-top card-pic-size image-responsive" src="https://s3-us-west-2.amazonaws.com/missionarybox/card1.jpg" alt="Card image cap">
 			  <div class="card-block">
-			    <h4 class="card-title">6 Month Subscription</h4>
-			    <p class="card-text">Get a monthly delivery of premium hand picked ties for 6 months. Only $25/month.</p>
-			    <a href="/products" class="btn btn-primary product-btn-styles">Learn More</a>
+			    <h4 class="card-title"><%= @products.first.name %></h4>
+			    <p class="card-text"><%= truncate(product_description(@products.first), length: 100, omission: '... (continued)', separator: ' ') rescue Spree.t(:product_has_no_description) %></p>
+			    <a href="/products/<%= @products.first.slug %>" class="btn btn-primary product-btn-styles">Learn More</a>
 			  </div>
 			</div>
 		</div>
@@ -33,9 +33,9 @@
 			<div class="card card-padding">
 			  <img class="card-img-top card-pic-size" src="https://s3-us-west-2.amazonaws.com/missionarybox/card2.jpg" alt="Card image cap">
 			  <div class="card-block">
-			    <h4 class="card-title">12 Month Subscription</h4>
-			    <p class="card-text">Get a monthly delivery of premium hand picked ties for 12 months. Only $23/month.</p>
-			    <a href="/products" class="btn btn-primary product-btn-styles">Learn More</a>
+			    <h4 class="card-title"><%= @products.second.name %></h4>
+			    <p class="card-text"><%= truncate(product_description(@products.second), length: 100, omission: '... (continued)', separator: ' ') rescue Spree.t(:product_has_no_description) %></p>
+			    <a href="/products/<%= @products.second.slug %>" class="btn btn-primary product-btn-styles">Learn More</a>
 			  </div>
 			</div>
 		</div>
@@ -44,9 +44,9 @@
 			<div class="card card-padding">
 			  <img class="card-img-top card-pic-size" src="https://s3-us-west-2.amazonaws.com/missionarybox/card3.jpg" alt="Card image cap">
 			  <div class="card-block">
-			    <h4 class="card-title">18 Month Subscription</h4>
-			    <p class="card-text">Get a monthly delivery of premium hand picked ties for 18 months. Only $21/month.</p>
-			    <a href="/products" class="btn btn-primary product-btn-styles">Learn More</a>
+			    <h4 class="card-title"><%= @products.third.name %></h4>
+			    <p class="card-text"><%= truncate(product_description(@products.third), length: 100, omission: '... (continued)', separator: ' ') rescue Spree.t(:product_has_no_description) %></p>
+			    <a href="/products/<%= @products.third.slug %>" class="btn btn-primary product-btn-styles">Learn More</a>
 			  </div>
 			</div>
 		</div>
@@ -55,9 +55,9 @@
 			<div class="card card-padding">
 			  <img class="card-img-top card-pic-size" src="https://s3-us-west-2.amazonaws.com/missionarybox/card4.jpg" alt="Card image cap">
 			  <div class="card-block">
-			    <h4 class="card-title">24 Month Subscription</h4>
-			    <p class="card-text">Get a monthly delivery of premium hand picked ties for 24 months. Only $19.99/month.</p>
-			    <a href="/products" class="btn btn-primary product-btn-styles">Learn More</a>
+			    <h4 class="card-title"><%= @products.fourth.name %></h4>
+			    <p class="card-text"><%= truncate(product_description(@products.fourth), length: 100, omission: '... (continued)', separator: ' ') rescue Spree.t(:product_has_no_description) %></p>
+			    <a href="/products/<%= @products.fourth.slug %>" class="btn btn-primary product-btn-styles">Learn More</a>
 			  </div>
 			</div>
 		</div>
