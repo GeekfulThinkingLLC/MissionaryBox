@@ -295,7 +295,7 @@ footer, .push {
 
 .login-page-styles {
 	background-color: #333333;
-	padding: 1px 0px 1px 0px;
+	padding: 1.5rem 0px 11rem 0px;
 }
 
 .sister-container {
@@ -444,7 +444,7 @@ footer, .push {
 }
 
 .login-card-style {
-	 background-color: #d9d9d9;
+	 background-color: black;
 	 padding: 20px 25px 5px 25px;
 }
 
@@ -455,11 +455,16 @@ footer, .push {
 .login-helpers {
 	font-size: 1.2rem;
 	padding-bottom: 15px;
+	color: white;
 }
 
 .login-helpers a {
 	text-decoration: none;
-	color: black;
+	color: white;
+}
+
+label {
+	color: white;
 }
 
 .product-form-padding {
@@ -477,11 +482,6 @@ footer, .push {
 
 .form-buttons {
 	margin: 30px 0px 0px 15px;
-}
-
-.login-card-margin {
-	margin-bottom: 30px;
-	margin-top: 30px;
 }
 
 .navbar-toggler-right {
