@@ -95,7 +95,7 @@ footer, .push {
 }
 
 .main-img {
-	background-color: black;
+	background-color: rgba(0,0,0,0.5);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 275px;
@@ -105,11 +105,15 @@ footer, .push {
 
 @media only screen and (min-width: 650px) {
     .main-img {    		
+    		background-color: rgba(0,0,0,0.5);
 				background-image: url('https://s3-us-west-2.amazonaws.com/missionarybox/placeholderhome.jpg'); 
 				background-size: cover;
 				background-repeat: no-repeat;
 				height: 350px;
 				margin-top: 0px;
+    }
+    .main-img img {
+    	opacity: .2;
     }
 }
 
@@ -139,10 +143,10 @@ footer, .push {
 }
 
 .btn-style {
-	background-color: white;
+	background-color: #333333;
 	border: none;
 	border-radius: 20px;
-	color: black;
+	color: white;
 	margin-top: 10px;
 }
 
@@ -181,7 +185,7 @@ footer, .push {
 
 .product-btn-styles {
 	border-radius: 20px;
-	background-color: black;
+	background-color: #333333;
 	border: none;
 }
 
@@ -228,20 +232,28 @@ footer, .push {
 .sister-btn-styles2 {
 	border-radius: 20px;
 	margin-bottom: 50px;
-	background-color: white;
+	background-color: #333333;
 	border: none;
 	width: 80%;
 	white-space: normal;
 }
 
 .sister-btn-styles2 h2 {
-	color: black;
+	color: white;
 
 }
 
 .sister-card-background {
-	background-color: #d9d9d9;
+	background-color: black;
 	border:none;
+}
+
+.text-white h1 {
+	color: white;
+}
+
+.text-white li {
+	color: white;
 }
 
 .sister-toggle-style {
@@ -375,6 +387,10 @@ footer, .push {
 
 .dropdown-divider {
 	background-color: #bcbcbc;
+}
+
+.dropdown-toggle::after {
+	color: white;
 }
 
 .login-card-style {
