@@ -171,6 +171,10 @@ footer, .push {
 	height: 15rem;
 }
 
+.row {
+	margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 650px) { 
   .card-pic-size { 
     height: 7rem;
@@ -185,6 +189,13 @@ footer, .push {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	padding: 25px;
+}
+
+.nav-container {
+	width: 98%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
 }
 
 .product-btn-styles {
@@ -287,6 +298,7 @@ footer, .push {
 #app {
 	font-size: 1rem;
 	letter-spacing: 1px;
+	width: 100%;
 }
 
 .nav-item {
