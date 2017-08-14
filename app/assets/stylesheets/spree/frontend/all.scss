@@ -125,7 +125,7 @@ footer, .push {
 
 @media only screen and (max-width: 650px) { 
   .nav-item { 
-    margin-right: -72px;
+    margin-right: -230px;
     text-align:right;
   } 
 }
@@ -303,12 +303,6 @@ footer, .push {
 
 .nav-item {
 	padding: 0px 0px 0px 20px;
-}
-
-@media only screen and (max-width: 650px) { 
-  .nav-item { 
-	padding: 0 65px 0 0;
-  } 
 }
 
 .social-navbar {
