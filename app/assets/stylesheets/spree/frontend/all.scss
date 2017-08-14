@@ -53,6 +53,11 @@ footer, .push {
   } 
 }
 
+.footer-container {
+	margin: 0 auto;
+	width: 90%;
+}
+
 .powered-by {
 	text-decoration: none;
 	color: red;
@@ -71,6 +76,13 @@ footer, .push {
 	padding: 0px 0px 0px 30px;
 	font-size: 15px;
 	color: black;
+}
+
+@media only screen and (max-width: 650px) { 
+  .footer-links-padding { 
+    padding: 0px 0px 0px 10px;
+    margin: 0 auto;
+  } 
 }
 
 .cart-or {
@@ -510,6 +522,8 @@ ul#products li .product-image img {
 
 .footer-margin {
 	margin-top: 5px;
+	width: 85%;
+	margin: auto;
 }
 
 .products-show-margin {
