@@ -136,6 +136,11 @@ footer, .push {
   } 
 }
 
+.card-block {
+	background-color: #333333;
+	color: white;
+}
+
 .text-outer {
 	width: 100%;
 	text-align: center;
@@ -143,7 +148,6 @@ footer, .push {
 }
 
 .btn-style {
-	background-color: #333333;
 	border: none;
 	border-radius: 20px;
 	color: white;
@@ -185,7 +189,6 @@ footer, .push {
 
 .product-btn-styles {
 	border-radius: 20px;
-	background-color: #333333;
 	border: none;
 }
 
@@ -200,6 +203,10 @@ footer, .push {
   .card-title { 
     font-size: 12px;
   } 
+}
+
+.card-title {
+	color: white;
 }
 
 @media only screen and (max-width: 650px) { 
@@ -232,9 +239,8 @@ footer, .push {
 .sister-btn-styles2 {
 	border-radius: 20px;
 	margin-bottom: 50px;
-	background-color: #333333;
 	border: none;
-	width: 80%;
+	width: 60%;
 	white-space: normal;
 }
 
@@ -284,7 +290,7 @@ footer, .push {
 }
 
 .nav-item {
-	padding: 0 20px 0 0;
+	padding: 0 65px 0 0;
 }
 
 /* test */
@@ -450,7 +456,8 @@ footer, .push {
 }
 
 .navbar-light .navbar-toggler {
-	margin-right: 10px;
+	margin-right: 55px;
+	background-color: #333333;
 }
 
 .navbar-toggleable-md {
