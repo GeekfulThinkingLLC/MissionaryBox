@@ -87,6 +87,11 @@ footer, .push {
   } 
 }
 
+.footer-inside-links {
+	list-style: none;
+	margin-left: 5%;
+}
+
 .cart-or {
 	font-size: 20px;
 	font-weight: 500;
@@ -153,7 +158,6 @@ footer, .push {
 .card-block {
 	background-color: #333333;
 	color: white;
-	height: 15rem;
 }
 
 .text-outer {
@@ -225,6 +229,12 @@ footer, .push {
   } 
 }
 
+@media screen and (min-width: 540px) {
+	.card-block {
+		min-height: 17rem;
+	}
+}
+
 @media only screen and (max-width: 650px) { 
   .card-title { 
     font-size: 12px;
@@ -233,6 +243,10 @@ footer, .push {
 
 .card-title a {
 	color: white;
+}
+
+.card-title {
+	text-align: center;
 }
 
 .card-text {
@@ -835,4 +849,19 @@ table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
 
 .login-card-margin {
 	padding: 25px 0px 50px 0px;
+}
+
+@media (min-width: 1500px) {
+  .col-xxl {
+  	-webkit-box-flex: 0;
+  	max-width: 16.6667%;
+  	flex: 0 0 16.6667%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .justify-content-xxl-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
