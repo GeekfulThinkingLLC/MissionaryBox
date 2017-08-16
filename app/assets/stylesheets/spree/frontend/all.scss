@@ -231,7 +231,19 @@ footer, .push {
 
 @media screen and (min-width: 540px) {
 	.card-block {
+		min-height: 15rem;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.card-block {
 		min-height: 17rem;
+	}
+}
+
+@media screen and (min-width: 1608px) {
+	.card-block {
+		min-height: 15rem;
 	}
 }
 
