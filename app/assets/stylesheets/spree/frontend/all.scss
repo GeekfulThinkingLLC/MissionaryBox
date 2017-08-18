@@ -261,6 +261,31 @@ footer, .push {
 	width: 80%;
 }
 
+@media only screen and (max-width: 650px) { 
+  .img-size-sister { 
+		width: 100%;
+  } 
+}
+
+.sister-text-over-img {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) { 
+  .sister-text-over-img { 
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 100%;
+  }
+  .limit-min-max2 h1{
+  	-webkit-text-stroke: 0px white;
+  }
+}
+
 .sister-btn-styles {
 	text-align: center;
 }
@@ -295,10 +320,6 @@ footer, .push {
 
 .sister-toggle-style {
 	text-align: center;
-}
-
-.toggle-text-right {
-	text-align: left;
 }
 
 .login-page-styles {
@@ -387,6 +408,22 @@ footer, .push {
   @include responsive-font(1.75vw, 20px, 90px);
 	color: white;
   -webkit-text-stroke: 1.5px black;
+  padding: 15px 0 15px 0;
+  max-width: 100%;
+}
+
+.limit-min-max2 h1 {
+  @include responsive-font(3vw, 20px, 90px);
+	color: white;
+  -webkit-text-stroke: 1px black;
+  padding: 0px 0 15px 0;
+  max-width: 100%;
+}
+
+.limit-min-max2 h3 {
+  @include responsive-font(1.75vw, 15px, 90px);
+	color: white;
+  -webkit-text-stroke: 1px black;
   padding: 15px 0 15px 0;
   max-width: 100%;
 }
