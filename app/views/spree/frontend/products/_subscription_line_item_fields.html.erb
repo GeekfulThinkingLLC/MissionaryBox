@@ -1,20 +1,37 @@
-<% @sub_length = [(Time.now + 3.months).at_beginning_of_month.next_month,
-                  (Time.now + 6.months).at_beginning_of_month.next_month,
-                  (Time.now + 12.months).at_beginning_of_month.next_month,
-                  (Time.now + 18.months).at_beginning_of_month.next_month,
-                  (Time.now + 24.months).at_beginning_of_month.next_month]
+<% @sub_length = [
+                  (Time.now + 1.months).at_end_of_month,
+                  (Time.now + 3.months).at_end_of_month,
+                  (Time.now + 6.months).at_end_of_month,
+                  (Time.now + 12.months).at_end_of_month,
+                ]
                   %>
 
-<%= fields_for :'subscription_line_item', SolidusSubscriptions::LineItem.new do |ff| %>
+  <%= fields_for :'subscription_line_item', SolidusSubscriptions::LineItem.new do |ff| %>
 
-  <%= ff.hidden_field :quantity, value: 1 %>
-  <%= ff.hidden_field :subscribable_id, value: 1 %>
-  <%= ff.hidden_field :interval_length, value: 1 %>
-  <%= ff.hidden_field :interval_units, value: 'month' %>
-  <%= ff.hidden_field :end_date, value: @sub_length.first %>
+    <%= ff.hidden_field :quantity, value: 1 %>
+    <%= ff.hidden_field :subscribable_id, value: 1 %>
+      <% if @product.id == 1 %>
+        <%= ff.text_field :interval_length, value: @product.id %>
+      <% elsif @product.id == 2 %>
+        <%= ff.text_field :interval_length, value: @product.id + 1 %>
+      <% elsif @product.id == 3 %>
+        <%= ff.text_field :interval_length, value: @product.id + 3 %>      
+      <% else @product.id == 4 %>
+        <%= ff.text_field :interval_length, value: @product.id + 8 %>
+      <% end %>  
+    <%= ff.hidden_field :interval_units, value: 'month' %>
+      <% if @product.id == 1 %>
+        <%= ff.text_field :end_date, value: @sub_length.first %>
+      <% elsif @product.id == 2 %>
+        <%= ff.text_field :end_date, value: @sub_length.second %>
+      <% elsif @product.id == 3 %>
+        <%= ff.text_field :end_date, value: @sub_length.third %>      
+      <% else @product.id == 4 %>
+        <%= ff.text_field :end_date, value: @sub_length.fourth %>
+      <% end %>  
 
-  <%= ff.hidden_field :subscribable_id, value: 1 %>
-<% end %>
+    <%= ff.hidden_field :subscribable_id, value: 1 %>
+  <% end %>
 
 <script>
   document.addEventListener("DOMContentLoaded", function(e) {
