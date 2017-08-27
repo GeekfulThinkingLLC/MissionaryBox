@@ -38,12 +38,12 @@ X https://johnsonbrothersonline.com/checkout/ piggyback on this for the countrie
 X Own S3 account and bucket set up
 - Terms and Conditions
 - Privacy Notice
-- Stripe payment info
-- Styling tips
+X Stripe payment info
+X Styling tips
 
 - mobile 
 
-- dark theme account page
+X dark theme account page
 - add terms and conditions from kyles email
 - add privacy from email
 - 
