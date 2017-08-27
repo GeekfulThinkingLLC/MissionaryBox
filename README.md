@@ -35,7 +35,7 @@ X 24 month subscription card container
 X https://johnsonbrothersonline.com/checkout/ piggyback on this for the countries we can ship to.
 
 #TODO for MissionaryBox
-- Own S3 account and bucket set up
+X Own S3 account and bucket set up
 - Terms and Conditions
 - Privacy Notice
 - Stripe payment info
@@ -44,3 +44,6 @@ X https://johnsonbrothersonline.com/checkout/ piggyback on this for the countrie
 - mobile 
 
 - dark theme account page
+- add terms and conditions from kyles email
+- add privacy from email
+- 
