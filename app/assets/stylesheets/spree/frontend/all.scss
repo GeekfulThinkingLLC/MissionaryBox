@@ -596,6 +596,11 @@ ul#products li .product-image img {
 
 .product-img-size {
 	width: 100%;
+	height: 20rem;
+}
+
+#product-images #main-image img {
+	max-height: auto;
 }
 
 .product-section-title {

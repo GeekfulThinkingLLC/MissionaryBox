@@ -3,14 +3,14 @@
   <div id="myModal" class="modal">
 	  <span class="close">&times;</span>
 	  <img class="modal-content" id="img01">
-	  <div id="caption"></div>
+	  <div id="caption">@product.name</div>
 	</div>
 <% else %>
   <%= image_tag @product.display_image.attachment(:product), itemprop: "image", class: "product-img-size", id: "product-image", alt: @product.name %>
     <div id="myModal" class="modal">
 		  <span class="close">&times;</span>
 		  <img class="modal-content" id="img01">
-		  <div id="caption"></div>
+		  <div id="caption">asdf</div>
 		</div>
 <% end %>
 

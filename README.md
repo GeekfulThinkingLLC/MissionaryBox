@@ -40,4 +40,6 @@ X dark theme account page
 
 
 - Set up mailers for when orders are placed, forgot password, order confirmation to customers
-- 
+- fix low res images being used on product show page
+- solidus subscriptions
+- figure out the error for existing payment method template error after hitting checkout button from cart
