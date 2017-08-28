@@ -19,10 +19,10 @@
               <col style="width: 20%;" />
             </colgroup>
             <thead>
-              <th></th>
-              <th align='left'><%= Spree.t(:item) %></th>
-              <th><%= Spree.t(:qty) %></th>
-              <th><%= Spree.t(:price) %></th>
+              <th class="dark-grey-background"></th>
+              <th class="dark-grey-background" align='left'><%= Spree.t(:item) %></th>
+              <th class="dark-grey-background"><%= Spree.t(:qty) %></th>
+              <th class="dark-grey-background"><%= Spree.t(:price) %></th>
             </thead>
             <tbody>
               <% ship_form.object.manifest.each do |item| %>
@@ -36,8 +36,8 @@
             </tbody>
           </table>
 
-          <h5 class="stock-shipping-method-title"><%= Spree.t(:shipping_method) %></h5>
-          <ul class="field radios shipping-methods">
+          <h5 class="stock-shipping-method-title dark-grey-background"><%= Spree.t(:shipping_method) %></h5>
+          <ul class="field radios shipping-methods">  
             <% ship_form.object.shipping_rates.each do |rate| %>
               <li class="shipping-method">
                 <label>

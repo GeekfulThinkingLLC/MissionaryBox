@@ -4,7 +4,7 @@
 <div class="row">
   <table id="cart-detail" data-hook>
     <thead>
-      <tr data-hook="cart_items_headers">
+      <tr class="dark-grey-background" data-hook="cart_items_headers">
         <th class="cart-item-description-header" colspan="2"><%= Spree.t(:item) %></th>
         <th class="cart-item-price-header"><%= Spree.t(:price) %>/mo</th>
         <th class="cart-item-quantity-header"><%= Spree.t(:qty) %></th>
@@ -23,9 +23,9 @@
       </tr>
       <%= render "spree/orders/adjustments" %>
     <% end %>
-    <tr class="cart-total">
+    <tr class="cart-total text-white">
       <td colspan="4" align='right'><h5><%= Spree.t(:total) %></h5></td>
-      <td colspan><h5><%= order.display_total %></h5></td>
+      <td colspan><h5 class="text-white"><%= order.display_total %></h5></td>
       <td></td>
     </tr>
   </table>

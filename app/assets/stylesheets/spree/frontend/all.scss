@@ -14,7 +14,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #333333;
 }
 
 footer, .push {
@@ -311,7 +311,7 @@ footer, .push {
 	padding-bottom: 4rem;
 }
 
-.text-white h1 {
+.text-white h1, h5 {
 	color: white;
 }
 
@@ -523,10 +523,6 @@ label {
 
 .checkout-forms-center {
 	text-align: center;
-}
-
-#checkout {
-	margin-left: 40px;
 }
 
 .form-buttons {
@@ -766,9 +762,11 @@ a.button {
 	background-color: #333333;
 	padding: 40px;
 	color: white;
+	margin: auto;
+	width: 100%;
 }
 
-#checkout h1, h3 {
+#checkout h1, h2, h3, h4, h5, h6, b, strong, td {
 	color: white;
 }
 
@@ -787,8 +785,50 @@ a.button {
 
 #checkout-summary {
 	padding: 0;
+	height: auto;
 }
 
 table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
 	background-color: #222222;
+}
+
+.grey-background {
+	background-color: #333333;
+}
+
+.dark-grey-background {
+	background-color: #222222;
+}
+
+.light-grey-background {
+	background-color: #444444;
+}
+
+.fixme {
+	position: fixed;
+	top: 0;
+}
+
+#shipping_method .stock-shipping-method-title {
+	background-color: #222222;
+}
+
+#order_summary {
+	margin: 30px 0px 30px 0px;
+}
+
+#order_summary h1, h2, h3, h4, h5, h6, b, p, td, span {
+	color: white;
+}
+
+#order_details div:last-child, #order_summary div:last-child {
+	color: white;
+}
+
+.order-summary-table-row {
+	border-left: 1px white solid;
+}
+
+.login-card-margin {
+	padding: 25px 0px 50px 0px;
 }

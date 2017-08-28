@@ -1,12 +1,10 @@
 <div class="container login-card-margin">
-    <div class="card">
-      <div class="card-block">
-        <h1><%= accurate_title %></h1>
+        <h1 class="text-white"><%= accurate_title %></h1>
 
         <div data-hook="account_summary" class="account-summary">
           <dl id="user-info">
-            <dt><%= Spree.t(:email) %></dt>
-            <dd><%= @user.email %> (<%= link_to Spree.t(:edit), spree.edit_account_path %>)</dd>
+            <dt class="text-white"><%= Spree.t(:email) %></dt>
+            <dd class="text-white"><%= @user.email %> (<%= link_to Spree.t(:edit), spree.edit_account_path %>)</dd>
           </dl>
         </div>
 
@@ -44,7 +42,5 @@
           <br />
 
         </div>
-      </div>
-    </div>
 </div>
-
+</div>
