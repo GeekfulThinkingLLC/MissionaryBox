@@ -13,7 +13,7 @@
         <div class="col-md-4">
           <div class="card login-card-style">
             <div class="card-block">
-              <% if Spree::Config[:allow_guest_checkout] %>
+              <% if Spree::Config[:allow_guest_checkout] && current_order.subscription_line_items.empty? %>
               <div id="guest_checkout" data-hook>
 
                 <h6 class="text-center login-helpers"><%= Spree.t(:guest_user_account) %></h6>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170811050642) do
+ActiveRecord::Schema.define(version: 20170828005151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,59 @@ ActiveRecord::Schema.define(version: 20170811050642) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
+  end
+
+  create_table "solidus_subscriptions_installment_details", force: :cascade do |t|
+    t.integer  "installment_id", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.boolean  "success"
+    t.string   "message"
+    t.integer  "order_id"
+    t.index ["installment_id"], name: "index_installment_details_on_installment_id", using: :btree
+    t.index ["order_id"], name: "index_solidus_subscriptions_installment_details_on_order_id", using: :btree
+  end
+
+  create_table "solidus_subscriptions_installments", force: :cascade do |t|
+    t.integer  "subscription_id", null: false
+    t.datetime "actionable_date"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["subscription_id"], name: "index_solidus_subscriptions_installments_on_subscription_id", using: :btree
+  end
+
+  create_table "solidus_subscriptions_line_items", force: :cascade do |t|
+    t.integer  "spree_line_item_id"
+    t.integer  "subscription_id"
+    t.integer  "quantity",           null: false
+    t.integer  "subscribable_id",    null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "interval_units"
+    t.integer  "interval_length"
+    t.date     "end_date"
+    t.index ["spree_line_item_id"], name: "index_solidus_subscriptions_line_items_on_spree_line_item_id", using: :btree
+    t.index ["subscribable_id"], name: "index_solidus_subscriptions_line_items_on_subscribable_id", using: :btree
+    t.index ["subscription_id"], name: "index_line_items_on_subscription_id", using: :btree
+    t.index ["subscription_id"], name: "index_solidus_subscriptions_line_items_on_subscription_id", using: :btree
+  end
+
+  create_table "solidus_subscriptions_subscriptions", force: :cascade do |t|
+    t.datetime "actionable_date"
+    t.string   "state"
+    t.integer  "user_id"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+    t.integer  "skip_count",            default: 0, null: false
+    t.integer  "successive_skip_count", default: 0, null: false
+    t.integer  "store_id"
+    t.integer  "shipping_address_id"
+    t.integer  "interval_length"
+    t.integer  "interval_units"
+    t.datetime "end_date"
+    t.index ["shipping_address_id"], name: "index_subscription_shipping_address_id", using: :btree
+    t.index ["store_id"], name: "index_solidus_subscriptions_subscriptions_on_store_id", using: :btree
+    t.index ["user_id"], name: "index_solidus_subscriptions_subscriptions_on_user_id", using: :btree
   end
 
   create_table "spree_addresses", force: :cascade do |t|
@@ -305,6 +358,7 @@ ActiveRecord::Schema.define(version: 20170811050642) do
     t.integer  "store_id"
     t.string   "approver_name"
     t.boolean  "frontend_viewable",                                          default: true,    null: false
+    t.boolean  "subscription_order",                                         default: false,   null: false
     t.index ["approver_id"], name: "index_spree_orders_on_approver_id", using: :btree
     t.index ["bill_address_id"], name: "index_spree_orders_on_bill_address_id", using: :btree
     t.index ["completed_at"], name: "index_spree_orders_on_completed_at", using: :btree
@@ -1144,6 +1198,7 @@ ActiveRecord::Schema.define(version: 20170811050642) do
     t.integer  "tax_category_id"
     t.datetime "updated_at"
     t.datetime "created_at"
+    t.boolean  "subscribable",                             default: false
     t.index ["position"], name: "index_spree_variants_on_position", using: :btree
     t.index ["product_id"], name: "index_spree_variants_on_product_id", using: :btree
     t.index ["sku"], name: "index_spree_variants_on_sku", using: :btree
@@ -1181,6 +1236,13 @@ ActiveRecord::Schema.define(version: 20170811050642) do
     t.datetime "updated_at"
   end
 
+  add_foreign_key "solidus_subscriptions_installment_details", "solidus_subscriptions_installments", column: "installment_id"
+  add_foreign_key "solidus_subscriptions_installment_details", "spree_orders", column: "order_id"
+  add_foreign_key "solidus_subscriptions_installments", "solidus_subscriptions_subscriptions", column: "subscription_id"
+  add_foreign_key "solidus_subscriptions_line_items", "solidus_subscriptions_subscriptions", column: "subscription_id"
+  add_foreign_key "solidus_subscriptions_line_items", "spree_line_items"
+  add_foreign_key "solidus_subscriptions_subscriptions", "spree_addresses", column: "shipping_address_id"
+  add_foreign_key "solidus_subscriptions_subscriptions", "spree_stores", column: "store_id"
   add_foreign_key "spree_adjustments", "spree_orders", column: "order_id", name: "fk_spree_adjustments_order_id", on_update: :restrict, on_delete: :restrict
   add_foreign_key "spree_product_promotion_rules", "spree_products", column: "product_id"
   add_foreign_key "spree_product_promotion_rules", "spree_promotion_rules", column: "promotion_rule_id"

@@ -1,12 +1,3 @@
-- twilio video page - set up just like this
-- on carousel have care package link
-- scroll down to see all products
-- one button on main page carousel
-- add sister's coming soon on homepage
-- simple front page
-- navbar includes care-packages - dropdown sisters coming soon!
-- wireframe and images needed for site
-
 #TODO
 X Fix tax_category_ids in admin dashboard undefined method
 X Fix footer space at bottom of page
@@ -26,18 +17,16 @@ X Update nav bar so it is a separate div from the picture imitate meundies.com
 X logo in the middle like dollar shave club
 X social media up on the top of the nav bar
 X facebook, instagram, twitter, snap chat,
-
-- product instead of people on the sisters drop down
-- make the picture span across the entire drop down  with the text on the picture
-
+X product instead of people on the sisters drop down
+X make the picture span across the entire drop down  with the text on the picture
 X make all buttons the standard blue
 X 24 month subscription card container
 X https://johnsonbrothersonline.com/checkout/ piggyback on this for the countries we can ship to.
 
 #TODO for MissionaryBox
 X Own S3 account and bucket set up
-- Terms and Conditions
-- Privacy Notice
+X Terms and Conditions
+X Privacy Notice
 X Stripe payment info
 X Styling tips
 
@@ -45,5 +34,10 @@ X Styling tips
 
 X dark theme account page
 - add terms and conditions from kyles email
-- add privacy from email
+- add privacy from email 
+
+
+
+
+- Set up mailers for when orders are placed, forgot password, order confirmation to customers
 - 
