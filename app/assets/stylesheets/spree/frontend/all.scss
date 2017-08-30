@@ -385,21 +385,19 @@ footer, .push {
 }
 
 .footer-min-max {
-  @include responsive-font(1.4vw, 12px, 90px);
+  @include responsive-font(1.4vw, 12px, 18px);
 	color: white;
 	line-height: 4vh;
-  /*-webkit-text-stroke: 1.5px black; */
 }
 
 .footer-min-max a {
-  @include responsive-font(.9vw, 10px, 20px);
+  @include responsive-font(.9vw, 10px, 15px);
 	color: white;
 	line-height: 4vh;
-  /*-webkit-text-stroke: 1.5px black; */
 }
 
 .limit-min-max h1 {
-  @include responsive-font(3vw, 25px, 90px);
+  @include responsive-font(3vw, 25px, 50px);
 	color: white;
   -webkit-text-stroke: 1.5px black;
   padding: 0px 0 15px 0;
@@ -407,7 +405,7 @@ footer, .push {
 }
 
 .limit-min-max h3 {
-  @include responsive-font(1.75vw, 20px, 90px);
+  @include responsive-font(1.75vw, 20px, 25px);
 	color: white;
   -webkit-text-stroke: 1.5px black;
   padding: 15px 0 15px 0;
@@ -552,7 +550,7 @@ label {
 	.logo-margin-auto img {
 		display: block;
 		margin: 0 auto;
-		width: 50%;
+		max-width: 40%;
 	}
 }
 
