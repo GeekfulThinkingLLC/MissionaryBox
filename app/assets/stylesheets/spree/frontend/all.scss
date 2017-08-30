@@ -471,6 +471,10 @@ footer, .push {
 	}
 }
 
+.product-description-size {
+	color: white;
+}
+
 @media only screen and (max-width: 650px) {
 	#product-description .product-title {
 		font-size: 15px;
@@ -620,11 +624,6 @@ ul#products li .product-image img {
 
 .product-img-size {
 	width: 100%;
-	height: 20rem;
-}
-
-#product-images #main-image img {
-	max-height: auto;
 }
 
 .product-section-title {
@@ -637,6 +636,12 @@ ul#products li .product-image img {
 
 #product-images #product-thumbnails li {
 	background-color: #333333;
+}
+
+#product-images #main-image img {
+	max-width: auto;
+	min-height: auto;
+	max-height: 15rem;
 }
 
 #product-thumbnails li img {
