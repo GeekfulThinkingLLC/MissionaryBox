@@ -19,7 +19,7 @@
       <% else @product.id == 4 %>
         <%= ff.text_field :interval_length, value: @product.id + 8 %>
       <% end %>  
-    <%= ff.hidden_field :interval_units, value: 'month' %>
+    <%= ff.hidden_field :interval_units, value: 'minute' %>
       <% if @product.id == 1 %>
         <%= ff.text_field :end_date, value: @sub_length.first %>
       <% elsif @product.id == 2 %>
