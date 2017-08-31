@@ -641,7 +641,6 @@ ul#products li .product-image img {
 #product-images #main-image img {
 	max-width: auto;
 	min-height: auto;
-	max-height: 15rem;
 }
 
 #product-thumbnails li img {
@@ -881,4 +880,18 @@ table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
     -webkit-box-pack: center;
     justify-content: center;
   }
+}
+
+.hidden-sub-field {
+	display: none;
+}
+
+.steps-data {
+	padding: 0px 10px 0px 10px;
+}
+
+.registration-cart {
+	color: white;
+	margin-top: 15px;
+	background-color: red;
 }

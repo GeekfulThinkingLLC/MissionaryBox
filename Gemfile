@@ -38,3 +38,4 @@ gem 'paperclip'
 gem 'fog-aws'
 gem 'solidus_email_to_friend', github: 'boomerdigital/solidus_email_to_friend', branch: 'master'
 gem "solidus_gateway"
+gem 'solidus_subscriptions', github: 'solidusio-contrib/solidus_subscriptions'

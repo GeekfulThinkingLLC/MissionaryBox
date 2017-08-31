@@ -7,6 +7,17 @@ GIT
       recaptcha (>= 0.3.1)
       solidus_core (>= 1.0.0, < 3)
 
+GIT
+  remote: https://github.com/solidusio-contrib/solidus_subscriptions.git
+  revision: 8d81b643e01730e58a84256c8eedd55a5f5ff3c8
+  specs:
+    solidus_subscriptions (0.0.1)
+      deface
+      i18n
+      solidus
+      solidus_support
+      state_machines
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -415,6 +426,7 @@ DEPENDENCIES
   solidus_auth_devise
   solidus_email_to_friend!
   solidus_gateway
+  solidus_subscriptions!
   spring
   spring-watcher-listen (~> 2.0.0)
   sprockets-rails (~> 3.2)
