@@ -11,23 +11,23 @@
     <%= ff.hidden_field :quantity, value: 1 %>
     <%= ff.hidden_field :subscribable_id, value: 1 %>
       <% if @product.id == 1 %>
-        <%= ff.text_field :interval_length, value: @product.id %>
+        <%= ff.hidden_field :interval_length, value: @product.id %>
       <% elsif @product.id == 2 %>
-        <%= ff.text_field :interval_length, value: @product.id + 1 %>
+        <%= ff.hidden_field :interval_length, value: @product.id + 1 %>
       <% elsif @product.id == 3 %>
-        <%= ff.text_field :interval_length, value: @product.id + 3 %>      
+        <%= ff.hidden_field :interval_length, value: @product.id + 3 %>      
       <% else @product.id == 4 %>
         <%= ff.hidden_field :interval_length, value: @product.id + 8 %>
       <% end %>  
     <%= ff.hidden_field :interval_units, value: 'minute' %>
       <% if @product.id == 1 %>
-        <%= ff.text_field :end_date, value: @sub_length.first %>
+        <%= ff.hidden_field :end_date, value: @sub_length.first %>
       <% elsif @product.id == 2 %>
-        <%= ff.text_field :end_date, value: @sub_length.second %>
+        <%= ff.hidden_field :end_date, value: @sub_length.second %>
       <% elsif @product.id == 3 %>
-        <%= ff.text_field :end_date, value: @sub_length.third %>      
+        <%= ff.hidden_field :end_date, value: @sub_length.third %>      
       <% else @product.id == 4 %>
-        <%= ff.text_field :end_date, value: @sub_length.fourth %>
+        <%= ff.hidden_field :end_date, value: @sub_length.fourth %>
       <% end %>  
 
     <%= ff.hidden_field :subscribable_id, value: 1 %>
