@@ -17,7 +17,7 @@
       <% elsif @product.id == 3 %>
         <%= ff.text_field :interval_length, value: @product.id + 3 %>      
       <% else @product.id == 4 %>
-        <%= ff.text_field :interval_length, value: @product.id + 8 %>
+        <%= ff.hidden_field :interval_length, value: @product.id + 8 %>
       <% end %>  
     <%= ff.hidden_field :interval_units, value: 'minute' %>
       <% if @product.id == 1 %>
