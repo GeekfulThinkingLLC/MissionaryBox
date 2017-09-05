@@ -3,7 +3,6 @@
   <legend align="center"><%= Spree.t(:payment_information) %></legend>
   <div data-hook="checkout_payment_step">
 
-
     <div id="payment-method-fields" data-hook>
       <% @order.available_payment_methods.each do |method| %>
       <p>
