@@ -1,3 +1,10 @@
+require 'solidus'
+require 'solidus_support'
+require "solidus_subscriptions/ability"
+require 'solidus_subscriptions/engine'
+require 'deface'
+require 'state_machines'
+
 # SolidusSubscriptions::Config.default_gateway = Spree::Gateway::Bogus
 # SolidusSubscriptions::Config.reprocessing_interval = 1.days
 # mattr_accessor(:maximum_successive_skips) { 1 }

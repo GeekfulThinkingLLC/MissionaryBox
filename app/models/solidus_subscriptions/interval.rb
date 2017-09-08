@@ -10,7 +10,8 @@ module SolidusSubscriptions
         day: 0,
         week: 1,
         month: 2,
-        year: 3
+        year: 3,
+        minute: 4
       }
     end
 
