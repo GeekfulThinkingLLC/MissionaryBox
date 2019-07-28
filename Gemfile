@@ -30,7 +30,7 @@ end
 
 gem 'solidus'
 gem 'solidus_auth_devise'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.3.1'
 gem 'sprockets-rails', '~> 3.2'
 gem 'jquery-ui-rails', '>= 5.0.5'
 gem 'paperclip-aws', '~> 1.6', '>= 1.6.8'
